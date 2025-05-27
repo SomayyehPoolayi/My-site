@@ -1,0 +1,12 @@
+.articlePageWrapper {
+  text-align: right;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

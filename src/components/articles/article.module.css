@@ -1,0 +1,23 @@
+.articleWrapper {
+  width: 23%;
+  height: 450px;
+  background-color: red;
+  margin-bottom: 20px;
+}
+
+.articleWrapper h3 {
+  text-align: right;
+  padding: 8px 16px;
+}
+
+.articleWrapper img {
+  width: 100%;
+}
+.articleWrapper p {
+  text-align: right;
+  padding: 8px 16px;
+  color: #777;
+}
+
+.articles {
+}
