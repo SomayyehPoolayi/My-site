@@ -5,7 +5,7 @@ function Home() {
     <div className={styled.homeWrapper}>
       <div className="container">
         <h1>Welcome my friend ...</h1>
-        <Article/>
+       
       </div>
     </div>
   );

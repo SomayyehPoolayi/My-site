@@ -1,0 +1,33 @@
+{
+  "articles": {
+    "data": [
+      {
+        "id": 1,
+        "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
+        "title": "test 1",
+        "readingTime": 5
+      },
+     
+      {
+        "id": 2,
+        "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
+        "title": "test 2",
+        "readingTime": 10
+      },
+     
+      {
+        "id": 3,
+        "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
+        "title": "",
+        "readingTime":15
+      },
+     
+      {
+        "id": 4,
+        "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
+        "title": "",
+        "readingTime": 7
+      }
+    ]
+  }
+}

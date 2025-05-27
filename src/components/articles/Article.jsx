@@ -1,12 +1,15 @@
 import styled from "./article.module.css";
-// import articleImg from "../../../src/assets/images";
 
-function Article() {
+
+function Article(props) {
   return(
     <div className={styled.articleWrapper}>
-        <img src="https://civilica.com/media/l/75224_tn.webp" />
-        <h3>متغیرها</h3>
-        <p>زمان مطالعه 5 دقیقه</p>
+        
+        <h3>{props.article.title}</h3>
+
+        <img src={props.article.imageUrl} alt="poster" />
+
+        <p>زمان مطالعه : {props.article.readingTime} دقیقه</p>
 
     </div>
   ) 
