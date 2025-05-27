@@ -1,9 +1,14 @@
-import Article from "../../components/articles/Article";
+
+import Header from "../../components/header/Header";
 import styled from "./home.module.css";
+
 function Home() {
   return (
+    
     <div className={styled.homeWrapper}>
+      <Header title="سمیه پولایی"/>
       <div className="container">
+        
         <h1>Welcome my friend ...</h1>
        
       </div>

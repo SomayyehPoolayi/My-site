@@ -1,5 +1,5 @@
 import styled from "./articlepage.module.css";
-import Header from "../header/Header";
+import Header from "../../components/header/Header";
 import Article from "../../components/articles/Article";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -8,24 +8,28 @@ function ArticlePage() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/articles").then((result) => {
-      setArticles(result.data.data);
-    });
-  });
+    axios
+      .get("http://localhost:8000/articles")
+      .then((result) => {
+        setArticles(result.data.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <div className={styled.articlePageWrapper}>
+      <Header title="سمیه پولایی"/>
       
-      <Header />
+      <div className="container">
+        <h2>آخرین مقالات</h2>
 
-      <h2>آخرین مقالات</h2>
-
-      <div className={styled.article}>
-       
-        {
-        articles.map((article) => ( <Article key={article.id} article={article}/> ))
-        }
-
+        <div className={styled.article}>
+          {articles.map((article) => (
+            <Article key={article.id} article={article} />
+          ))}
+        </div>
       </div>
     </div>
   );

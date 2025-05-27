@@ -1,13 +1,25 @@
-
-import './App.css';
-import Header from './components/header/Header';
-import Home from './pages/home/Home';
+import "./App.css";
+import Article from "./components/articles/Article";
+import Header from "./components/header/Header";
+import AboutMe from "./pages/aboutMe/AboutMe";
+import ArticlePage from "./pages/articles/ArticlePage";
+import BuildArticle from "./pages/buildArticle/BuildArticle";
+import Exit from "./pages/exit/Exit";
+import Home from "./pages/home/Home";
+import { Route, Routes } from "react-router-dom";
+import Search from "./pages/search/Search";
 
 function App() {
   return (
     <div className="App">
-    <Header title="سمیه پولایی"/>
-    <Home/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/articles-page" element={<ArticlePage />} />
+        <Route path="/build-article" element={<BuildArticle />} />
+        <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/logout" element={<Exit />} />
+        <Route path="/search" element={<Search />} />
+      </Routes>
     </div>
   );
 }

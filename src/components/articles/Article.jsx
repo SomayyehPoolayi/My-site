@@ -12,7 +12,7 @@ function Article(props) {
         <p>زمان مطالعه : {props.article.readingTime} دقیقه</p>
 
     </div>
-  ) 
+  ) ;
   
 }
 export default Article;
