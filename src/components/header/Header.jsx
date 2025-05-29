@@ -1,4 +1,5 @@
 import styled from "./header.module.css";
+import { Link } from "react-router-dom";
 
 function Header(props) {
   return (
@@ -6,11 +7,26 @@ function Header(props) {
       <div className="container">
         <div className={styled.header}>
           <ul>
-            <li>خروج</li>
-            <li>درباره من</li>
-            <li>ساخت مقاله</li>
-            <li>جستجوی مقاله</li>
-            <li>لیست مقالات</li>
+            <li>
+              <Link to="/logout">خروج</Link>
+            </li>
+
+            <li>
+              <Link to="/about-me">درباره من</Link>
+            </li>
+
+            <li>
+              <Link to="/build-article">ساخت مقاله</Link>
+            </li>
+
+            <li>
+              <Link to="/search">جستجوی مقاله</Link>
+            </li>
+
+            <li>
+              <Link to="/articles-page"> لیست مقالات</Link>
+            </li>
+           
             <h3>{props.title}</h3>
           </ul>
         </div>

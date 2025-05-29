@@ -1,11 +1,10 @@
 import "./App.css";
-import Article from "./components/articles/Article";
-import Header from "./components/header/Header";
 import AboutMe from "./pages/aboutMe/AboutMe";
 import ArticlePage from "./pages/articles/ArticlePage";
 import BuildArticle from "./pages/buildArticle/BuildArticle";
 import Exit from "./pages/exit/Exit";
 import Home from "./pages/home/Home";
+import Register from "./pages/register/Register";
 import { Route, Routes } from "react-router-dom";
 import Search from "./pages/search/Search";
 
@@ -19,6 +18,7 @@ function App() {
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/logout" element={<Exit />} />
         <Route path="/search" element={<Search />} />
+         <Route path="/register" element={<Register/>} />
       </Routes>
     </div>
   );

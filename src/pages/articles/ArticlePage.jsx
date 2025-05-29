@@ -20,9 +20,9 @@ function ArticlePage() {
 
   return (
     <div className={styled.articlePageWrapper}>
-      <Header title="سمیه پولایی"/>
       
       <div className="container">
+        <Header title="سمیه پولایی"/>
         <h2>آخرین مقالات</h2>
 
         <div className={styled.article}>

@@ -1,0 +1,21 @@
+.exitWrapper {
+  margin: 200px auto;
+  color: rgb(28, 28, 156);
+  font-size: x-large;
+  text-shadow: 2px 2px #8b95aa;
+}
+
+.returnButton {
+  padding: 12px 40px;
+  border-color: bisque;
+    color:bisque;
+    background-color:rgb(87, 87, 236);
+    border-radius: 8px;
+    font-size: larger;
+}
+
+.returnButton:hover{
+  box-shadow: 2px 2px  rgb(173, 173, 175);
+  background-color: bisque;
+  color:rgb(87, 87, 236); ;
+}

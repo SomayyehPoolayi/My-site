@@ -2,7 +2,7 @@ import Header from "../../components/header/Header";
 
 function Search() {
   return (
-    <div>
+    <div className="container">
       <Header title="سمیه پولایی" />
     </div>
   );

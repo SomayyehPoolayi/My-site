@@ -1,8 +1,9 @@
 .articleWrapper {
-  width: 23%;
-  height: 450px;
-  background-color: red;
+  width: 22%;
+  height: 400px;
   margin-bottom: 20px;
+ border-radius: 8px;
+
 }
 
 .articleWrapper h3 {
@@ -19,5 +20,3 @@
   color: #777;
 }
 
-.articles {
-}

@@ -1,18 +1,15 @@
 import styled from "./article.module.css";
 
-
 function Article(props) {
-  return(
+  return (
     <div className={styled.articleWrapper}>
-        
-        <h3>{props.article.title}</h3>
+      <img src={props.article.imageUrl} alt="poster" />
 
-        <img src={props.article.imageUrl} alt="poster" />
+      <h3>{props.article.title}</h3>
 
-        <p>زمان مطالعه : {props.article.readingTime} دقیقه</p>
+      <p> تعداد صفحات : {props.article.pageNumbers} صفحه</p>
 
-    </div>
-  ) ;
-  
+          </div>
+  );
 }
 export default Article;

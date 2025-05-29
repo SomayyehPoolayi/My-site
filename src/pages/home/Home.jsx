@@ -6,10 +6,10 @@ function Home() {
   return (
     
     <div className={styled.homeWrapper}>
+       <div className="container">
       <Header title="سمیه پولایی"/>
-      <div className="container">
-        
-        <h1>Welcome my friend ...</h1>
+     
+             <h1>Welcome my friend ...</h1>
        
       </div>
     </div>

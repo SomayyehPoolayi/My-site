@@ -4,29 +4,29 @@
       {
         "id": 1,
         "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
-        "title": "test 1",
-        "readingTime": 5
+        "title": "Cities of the future, intelligence, vigilance",
+        "pageNumbers": 5
       },
-     
+
       {
         "id": 2,
         "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
         "title": "test 2",
-        "readingTime": 10
+       "pageNumbers": 5
       },
-     
+
       {
         "id": 3,
         "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
         "title": "",
-        "readingTime":15
+        "pageNumbers": 5
       },
-     
+
       {
         "id": 4,
         "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
         "title": "",
-        "readingTime": 7
+       "pageNumbers": 5
       }
     ]
   }

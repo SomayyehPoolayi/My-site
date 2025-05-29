@@ -1,11 +1,11 @@
 import Header from "../../components/header/Header";
 
-function AboutMe(){
+function Register(){
     return(
 <div className="container">
-    <Header title="سمیه پولایی"/>
-    <h1>meeeee</h1>
+     <Header title="سمیه پولایی" />
+    register
 </div>
     )
 }
-export default AboutMe;
+export default Register;
