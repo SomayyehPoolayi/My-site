@@ -19,7 +19,9 @@ h4,
 h5,
 h6,
 p,
-ul {
+ul ,
+span
+{
   margin: 0px;
   padding: 0px;
 }

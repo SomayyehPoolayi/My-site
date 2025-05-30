@@ -7,6 +7,8 @@ function Article(props) {
 
       <h3>{props.article.title}</h3>
 
+      <p>زبان: {props.article.language}</p>
+
       <p> تعداد صفحات : {props.article.pageNumbers} صفحه</p>
 
           </div>

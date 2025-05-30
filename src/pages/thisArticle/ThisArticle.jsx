@@ -27,11 +27,11 @@ function ThisArticle() {
         <div className="container">
           <h1> {article.title} </h1>
 
-          <div className={styled.ThisArticleInfo}>
-            <span>{article.date}</span>
-            <span> {article.journal}  :</span>
+          <div className={styled.thisArticleInfo}>
             <img src={article.imageUrl} alt="" />
-            <p>{article.content} </p>
+            <p>{article.date}منتشر شده در سال </p>
+            <p> {article.journal} </p>
+            <span>{article.content} </span>
           </div>
         </div>
       </div>
