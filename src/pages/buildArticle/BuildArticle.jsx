@@ -4,6 +4,7 @@ function BuildArticle() {
   return (
     <div className="container">
       <Header title="سمیه پولایی" />
+      <h1>building</h1>
     </div>
   );
 }

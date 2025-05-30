@@ -1,8 +1,11 @@
 .articlePageWrapper {
   text-align: right;
   margin-bottom: 20px;
- 
-}
+  }
+
+ .articlePageWrapper a{
+  width: 23%;
+  }
 
 .article {
   display: flex;
@@ -16,4 +19,5 @@
 
 .articlePageWrapper img {
   height: 400px;
+   border-radius: 10px;
 }

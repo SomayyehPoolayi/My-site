@@ -1,33 +1,44 @@
 {
-  "articles": {
-    "data": [
-      {
-        "id": 1,
-        "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
-        "title": "Cities of the future, intelligence, vigilance",
-        "pageNumbers": 5
-      },
+  "articles": 
+  [
+    {
+      "id": 1,
+      "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
+      "title": "Cities of the future, intelligence, vigilance",
+      "pageNumbers": 5,
+      "date":1400,
+      "journal":"دومین همایش بین المللی شهر هوشمند، چالش ها و راهبردها",
+      "content":"متن یک"
+    },
 
-      {
-        "id": 2,
-        "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
-        "title": "test 2",
-       "pageNumbers": 5
-      },
+    {
+      "id": 2,
+      "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
+      "title": "test 2",
+      "pageNumbers": 5,
+      "date":1400,
+      "journal":"دومین همایش بین المللی شهر هوشمند، چالش ها و راهبردها",
+      "content":" متن دو" 
+    },
 
-      {
-        "id": 3,
-        "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
-        "title": "",
-        "pageNumbers": 5
-      },
+    {
+      "id": 3,
+      "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
+      "title": "test3",
+      "pageNumbers": 5,
+      "date":1400,
+      "journal":"دومین همایش بین المللی شهر هوشمند، چالش ها و راهبردها",
+      "content":" متن سه" 
+    },
 
-      {
-        "id": 4,
-        "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
-        "title": "",
-       "pageNumbers": 5
-      }
-    ]
-  }
+    {
+      "id": 4,
+      "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
+      "title": "test4",
+      "pageNumbers": 5,
+      "date":1400,
+      "journal":"دومین همایش بین المللی شهر هوشمند، چالش ها و راهبردها",
+      "content":" متن چهار" 
+    }
+  ]
 }

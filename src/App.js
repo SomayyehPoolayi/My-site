@@ -7,6 +7,7 @@ import Home from "./pages/home/Home";
 import Register from "./pages/register/Register";
 import { Route, Routes } from "react-router-dom";
 import Search from "./pages/search/Search";
+import ThisArticle from "./pages/thisArticle/ThisArticle";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/logout" element={<Exit />} />
         <Route path="/search" element={<Search />} />
          <Route path="/register" element={<Register/>} />
+         <Route path="/this-article/:id" element={<ThisArticle />} />
       </Routes>
     </div>
   );
