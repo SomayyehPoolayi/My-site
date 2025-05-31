@@ -1,7 +1,7 @@
 import "./App.css";
 import AboutMe from "./pages/aboutMe/AboutMe";
 import ArticlePage from "./pages/articles/ArticlePage";
-import BuildArticle from "./pages/buildArticle/BuildArticle";
+import CreateArticle from "./pages/createArticle/CreateArticle";
 import Exit from "./pages/exit/Exit";
 import Home from "./pages/home/Home";
 import Register from "./pages/register/Register";
@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/articles-page" element={<ArticlePage />} />
-        <Route path="/build-article" element={<BuildArticle />} />
+        <Route path="/create-article" element={<CreateArticle />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/logout" element={<Exit />} />
         <Route path="/search" element={<Search />} />

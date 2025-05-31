@@ -16,7 +16,7 @@ function Header(props) {
             </li>
 
             <li>
-              <Link to="/build-article">ساخت مقاله</Link>
+              <Link to="/create-article">ساخت مقاله</Link>
             </li>
 
             <li>
