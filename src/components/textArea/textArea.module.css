@@ -1,0 +1,29 @@
+.textareaWrapper {
+}
+
+.textareaWrapper label {
+  display: block;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.textareaWrapper textarea {
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #acaac5;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.textareaWrapper textarea:hover {
+  border: 2px solid rgb(104, 104, 250);
+}
+
+.textareaWrapper textarea.filled {
+  border: 2px solid rgb(104, 104, 250);
+}
+
+.textareaWrapper textarea.typing {
+  border: 2px solid rgb(104, 104, 250);
+}
+
