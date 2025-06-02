@@ -1,25 +1,27 @@
-import { Children, useState } from "react";
-import styles from "./darkModeChange.module.css";
+import React, { useState } from "react";
+import styled from "./darkModeChange.module.css";
+import Night from "../nightDay/Night";
 
 function DarkMode(props) {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
-   
     setIsDarkMode((prevMode) => !prevMode);
-  };
+   };
 
   return (
     <div
-      className={`${styles.darkModeWrapper} ${
-        isDarkMode ? styles.darkMode : styles.lightMode
+      className={`${styled.darkModeWrapper} ${
+        isDarkMode ? styled.darkMode : styled.lightMode
       }`}
     >
-       
-      <button onClick={toggleDarkMode} className={styles.buttonChangeColor}>
-        حالت شب
-      </button>
-      {props.children}
+      <Night isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+{/* 
+      {React.Children.map(props.children, (child) =>
+        React.cloneElement(child, { isDarkMode, toggleDarkMode })
+      )} */}
+
+      <div>{props.children}</div>
     </div>
   );
 }

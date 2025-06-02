@@ -1,12 +1,15 @@
-
 import styled from "./header.module.css";
 import { Link } from "react-router-dom";
 
-function Header(props) {
-  return (
+function Header(isDarkMode) {
+  // console.log(isDarkMode)
+   return (
     <>
-
-      <div className={styled.headerWrapper}>
+      <div
+        className={`${styled.headerWrapper} ${
+          isDarkMode ? styled.darkMode : styled.lightMode
+        }`}
+      >
         <div className="container">
           <div className={styled.header}>
             <ul>
@@ -30,7 +33,7 @@ function Header(props) {
                 <Link to="/articles-page"> لیست مقالات</Link>
               </li>
 
-              <h3>{props.title}</h3>
+              <h3>سمیه پولایی</h3> 
             </ul>
           </div>
         </div>

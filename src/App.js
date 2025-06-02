@@ -10,8 +10,7 @@ import Search from "./pages/search/Search";
 import ThisArticle from "./pages/thisArticle/ThisArticle";
 import NotFound from "./pages/page404/NotFound";
 import DarkMode from "./components/darkmode/DarkMode";
-import "./"
-
+import "./";
 
 function App() {
   return (
@@ -24,12 +23,11 @@ function App() {
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/logout" element={<Exit />} />
         <Route path="/search" element={<Search />} />
-         <Route path="/register" element={<Register/>} />
-         <Route path="/this-article/:id" element={<ThisArticle />} />
-          <Route path="*" element={<NotFound/>} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/this-article/:id" element={<ThisArticle />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-       </DarkMode>
-  
+    </DarkMode>
   );
 }
 

@@ -17,7 +17,7 @@
 .lightMode {
   background: #0068fa;
   background: linear-gradient(
-    339deg,
+    207deg,
     rgba(0, 104, 250, 1) 0%,
     rgba(114, 238, 242, 1) 38%,
     rgba(252, 253, 255, 1) 100%
@@ -27,16 +27,7 @@
 }
 
 .buttonChangeColor {
-  padding: 12px 40px;
-  border-color: bisque;
-  color: bisque;
-  background-color: rgb(87, 87, 236);
-  border-radius: 8px;
-  font-size: larger;
-}
-
-.buttonChangeColor:hover {
-  box-shadow: 2px 2px rgb(173, 173, 175);
-  background-color: bisque;
-  color: rgb(87, 87, 236);
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }

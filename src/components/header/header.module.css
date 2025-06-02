@@ -1,16 +1,33 @@
 .headerWrapper {
-  box-shadow: 0px 3px 5px #bbb;
-  background-color: rgb(127, 127, 247);
-}
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+  border-radius: 12px;
+  }
+
 .header {
-    
   text-align: center;
-  height: 80px;
+  height: 70px;
   display: flex;
   justify-content: end;
   align-items: center;
-  color: #201e8f;
+  color: #232324;
   font-size: larger;
+}
+
+.lightMode {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+  border: 2px solid #444;
+  border-radius: 8px;
+  box-shadow: 5px 5px rgba(99, 99, 99, 0.4);
+}
+
+.darkMode {
+  background-color: rgba(224, 247, 250, 0.4);
+  color: #111;
+  border: 2px solid #aaa;
+  border-radius: 8px;
+  box-shadow: 5px 5px rgba(8, 8, 8, 0.4);
 }
 
 .header ul {
@@ -29,5 +46,5 @@
 }
 
 .header ul h3 {
-  margin-left: 30px;
-}
+  margin-left: 40px;
+ }
