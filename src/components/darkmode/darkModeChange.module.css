@@ -1,0 +1,42 @@
+.darkModeWrapper {
+  transition: background-color 0.5s ease, 0.3s ease;
+}
+
+.darkMode {
+  background: #0a1421;
+  background: linear-gradient(
+    339deg,
+    rgba(10, 20, 33, 1) 0%,
+    rgba(41, 46, 46, 1) 38%,
+    rgba(81, 85, 87, 1) 100%
+  );
+  color: #d4a5fc;
+  height: 100vh;
+}
+
+.lightMode {
+  background: #0068fa;
+  background: linear-gradient(
+    339deg,
+    rgba(0, 104, 250, 1) 0%,
+    rgba(114, 238, 242, 1) 38%,
+    rgba(252, 253, 255, 1) 100%
+  );
+  color: #3d3d3d;
+  height: 100vh;
+}
+
+.buttonChangeColor {
+  padding: 12px 40px;
+  border-color: bisque;
+  color: bisque;
+  background-color: rgb(87, 87, 236);
+  border-radius: 8px;
+  font-size: larger;
+}
+
+.buttonChangeColor:hover {
+  box-shadow: 2px 2px rgb(173, 173, 175);
+  background-color: bisque;
+  color: rgb(87, 87, 236);
+}

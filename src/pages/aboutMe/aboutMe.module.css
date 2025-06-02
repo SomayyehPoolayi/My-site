@@ -1,0 +1,7 @@
+.aboutMeWrapper{
+    display: flex;
+}
+
+.aboutMeWrapper h3{
+    color: chocolate;
+}

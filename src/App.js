@@ -9,10 +9,14 @@ import { Route, Routes } from "react-router-dom";
 import Search from "./pages/search/Search";
 import ThisArticle from "./pages/thisArticle/ThisArticle";
 import NotFound from "./pages/page404/NotFound";
+import DarkMode from "./components/darkmode/DarkMode";
+import "./"
+
 
 function App() {
   return (
-    <div className="App">
+    // <div className="App">
+    <DarkMode>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/articles-page" element={<ArticlePage />} />
@@ -24,7 +28,8 @@ function App() {
          <Route path="/this-article/:id" element={<ThisArticle />} />
           <Route path="*" element={<NotFound/>} />
       </Routes>
-    </div>
+       </DarkMode>
+  
   );
 }
 
