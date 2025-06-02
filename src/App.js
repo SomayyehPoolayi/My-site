@@ -8,6 +8,7 @@ import Register from "./pages/register/Register";
 import { Route, Routes } from "react-router-dom";
 import Search from "./pages/search/Search";
 import ThisArticle from "./pages/thisArticle/ThisArticle";
+import NotFound from "./pages/page404/NotFound";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/search" element={<Search />} />
          <Route path="/register" element={<Register/>} />
          <Route path="/this-article/:id" element={<ThisArticle />} />
+          <Route path="*" element={<NotFound/>} />
       </Routes>
     </div>
   );
