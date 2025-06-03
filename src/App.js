@@ -11,6 +11,9 @@ import ThisArticle from "./pages/thisArticle/ThisArticle";
 import NotFound from "./pages/page404/NotFound";
 import DarkMode from "./components/darkmode/DarkMode";
 import "./";
+import MyBiography from "./pages/myBiography/MyBiography";
+import MyContact from "./pages/myContact/MyContact";
+
 
 function App() {
   return (
@@ -25,7 +28,10 @@ function App() {
         <Route path="/search" element={<Search />} />
         <Route path="/register" element={<Register />} />
         <Route path="/this-article/:id" element={<ThisArticle />} />
-        <Route path="*" element={<NotFound />} />
+
+        <Route path="/about-me/my-biography" element={<MyBiography />} />
+        <Route path="/about-me/my-contact" element={<MyContact />} />
+      
       </Routes>
     </DarkMode>
   );
