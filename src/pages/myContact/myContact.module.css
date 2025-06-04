@@ -25,6 +25,8 @@
 
 .phone .phonCell {
   margin-left: 250px;
+  width: 50em;
+  height: 4em;
 }
 
 .telegram {
@@ -45,7 +47,9 @@
 }
 
 .telegram .telegramIcon {
- margin-left: 180px;
+  margin-left: 180px;
+  width: 50em;
+  height: 4em;
 }
 
 .email {
@@ -68,6 +72,8 @@
 
 .email .emailIcon {
   margin-left: 100px;
+  width: 50em;
+  height: 4em;
 }
 
 .linkedIn {
@@ -90,6 +96,8 @@
 
 .linkedIn .LinkedInIcon {
   margin-right: 20px;
+  width: 50em;
+  height: 3em;
 }
 
 .gitHub {
@@ -111,4 +119,6 @@
 
 .gitHub .gitHubIcon {
   margin-left: 20px;
+  width: 50em;
+  height: 3em;
 }

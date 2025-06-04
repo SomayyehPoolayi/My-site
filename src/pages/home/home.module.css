@@ -1,6 +1,7 @@
 .homeWrapper {
   display: flex;
   justify-content: center;
+ 
 }
 
 .homeWrapper h1  {
@@ -12,5 +13,5 @@
 .homeWrapper h2 {
      display: flex;
   justify-content: center;
- margin-top: 100px;
+ margin: 110px 0;
 }

@@ -5,6 +5,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Loading from "../../components/loading/Loading";
+import Footer from "../../components/footer/Footer";
 
 function ArticlePage() {
   const [articles, setArticles] = useState([]);
@@ -42,8 +43,12 @@ function ArticlePage() {
             ))}
           </div>
         )}
+
+       
       </div>
+      
     </div>
+    
   );
 }
 export default ArticlePage;
