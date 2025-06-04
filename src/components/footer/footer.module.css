@@ -1,0 +1,32 @@
+.footerWrapper {
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+  border-radius: 12px;
+  }
+
+/* .footer {
+  text-align: center;
+  height: 70px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: #322436;
+  font-size: larger;
+} */
+
+.lightMode {
+background-color: rgba(224, 247, 250, 0.4);
+  color:  #322436;
+  border: 2px solid #aaa;
+  border-radius: 8px;
+  box-shadow: 5px 5px rgba(8, 8, 8, 0.4);
+}
+
+.darkMode {
+  background-color: rgba(224, 247, 250, 0.4);
+  color:  #322436;
+  border: 2px solid #aaa;
+  border-radius: 8px;
+  box-shadow: 5px 5px rgba(8, 8, 8, 0.4);
+}
+

@@ -2,15 +2,13 @@ import Header from "../../components/header/Header";
 import styled from "./aboutMe.module.css";
 import myPic from "../../assets/images/my-pic.jpg";
 import { Link } from "react-router-dom";
-import {openResume} from "../../utils/openResume";
+import { openResume } from "../../utils/openResume";
 import MyBiography from "../myBiography/MyBiography";
 import MyContact from "../myContact/MyContact";
-
+import Footer from "../../components/footer/Footer";
 
 function AboutMe(props) {
-
-
- return (
+  return (
     <div className="container">
       <Header title="سمیه پولایی" />
 
@@ -18,9 +16,8 @@ function AboutMe(props) {
         <img src={myPic} />
 
         <div className={styled.buttonWrapper}>
-          
           <Link to="/about-me/my-biography">
-            <button  onClick={<MyBiography/>}>زندگینامه حرفه ای من</button>
+            <button onClick={<MyBiography />}>زندگینامه حرفه ای من</button>
           </Link>
 
           <Link>
@@ -28,11 +25,11 @@ function AboutMe(props) {
           </Link>
 
           <Link to="/about-me/my-contact">
-            <button onClick={<MyContact/>}>راههای ارتباطی با من</button>
+            <button onClick={<MyContact />}>راههای ارتباطی با من</button>
           </Link>
-        
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

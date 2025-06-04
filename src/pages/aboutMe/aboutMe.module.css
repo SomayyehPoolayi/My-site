@@ -24,7 +24,7 @@
   height: 50px;
   width: 15rem;
   padding: 12px 40px;
-  border: 2px solid rgb(20, 20, 63);
+  border: 2px solid rgb(63, 61, 84);
   color: rgba(252, 176, 69, 1);
   background-color: rgba(63, 61, 84, 1);
   border-radius: 8px;
@@ -33,6 +33,4 @@
 
 .buttonWrapper button:hover {
   box-shadow: 2px 5px 15px rgb(90, 65, 112);
-  border: 2px solid rgb(20, 20, 63); 
 }
-
