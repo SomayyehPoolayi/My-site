@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top:60px;
+  margin-top: 60px;
 }
 
 .aboutMeWrapper img {
@@ -24,15 +24,15 @@
   height: 50px;
   width: 15rem;
   padding: 12px 40px;
-  border-color: bisque;
-  color: bisque;
-  background-color: rgb(87, 87, 236);
+  border: 2px solid rgb(20, 20, 63);
+  color: rgba(252, 176, 69, 1);
+  background-color: rgba(63, 61, 84, 1);
   border-radius: 8px;
   font-size: larger;
 }
 
 .buttonWrapper button:hover {
-  box-shadow: 2px 2px rgb(173, 173, 175);
-  background-color: bisque;
-  color: rgb(87, 87, 236);
+  box-shadow: 2px 5px 15px rgb(90, 65, 112);
+  border: 2px solid rgb(20, 20, 63); 
 }
+

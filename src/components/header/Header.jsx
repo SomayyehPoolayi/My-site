@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header(isDarkMode) {
   // console.log(isDarkMode)
-   return (
+  return (
     <>
       <div
         className={`${styled.headerWrapper} ${
@@ -32,8 +32,13 @@ function Header(isDarkMode) {
               <li>
                 <Link to="/articles-page"> لیست مقالات</Link>
               </li>
-
-              <h3>سمیه پولایی</h3> 
+             
+              <li>
+                <Link to="/">
+                  <h3>سمیه پولایی</h3>
+                </Link>
+              </li>
+            
             </ul>
           </div>
         </div>

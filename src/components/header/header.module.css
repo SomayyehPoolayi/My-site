@@ -10,21 +10,21 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  color: #232324;
+  color: #322436;
   font-size: larger;
 }
 
 .lightMode {
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #ffffff;
-  border: 2px solid #444;
+background-color: rgba(224, 247, 250, 0.4);
+  color:  #322436;
+  border: 2px solid #aaa;
   border-radius: 8px;
-  box-shadow: 5px 5px rgba(99, 99, 99, 0.4);
+  box-shadow: 5px 5px rgba(8, 8, 8, 0.4);
 }
 
 .darkMode {
   background-color: rgba(224, 247, 250, 0.4);
-  color: #111;
+  color:  #322436;
   border: 2px solid #aaa;
   border-radius: 8px;
   box-shadow: 5px 5px rgba(8, 8, 8, 0.4);
@@ -42,9 +42,11 @@
 }
 
 .header li:hover {
-  color: rgb(248, 247, 247);
+  color: #241a27;
+  font-size: larger;
 }
 
 .header ul h3 {
-  margin-left: 40px;
+  margin-left: 80px;
+  cursor: pointer;
  }

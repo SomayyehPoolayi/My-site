@@ -31,6 +31,7 @@ function App() {
 
         <Route path="/about-me/my-biography" element={<MyBiography />} />
         <Route path="/about-me/my-contact" element={<MyContact />} />
+         <Route path="*" element={<NotFound />} />
       
       </Routes>
     </DarkMode>
