@@ -1,5 +1,29 @@
-.biographyWrapper{
-    font-size: 16px;
-    padding: 20px;
-    color: black;
+.biographyWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #333;
+  background-color: #42424200;
+  direction: rtl;
+}
+
+.biography-section p {
+  margin-bottom: 16px;
+}
+
+.persian {
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+   text-align: justify;
+}
+
+.english {
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  direction: ltr;
+  border-radius: 10px;
+   text-align: justify;
 }

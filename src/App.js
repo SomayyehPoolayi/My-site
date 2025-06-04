@@ -11,9 +11,9 @@ import ThisArticle from "./pages/thisArticle/ThisArticle";
 import NotFound from "./pages/page404/NotFound";
 import DarkMode from "./components/darkmode/DarkMode";
 import "./";
-import MyBiography from "./pages/myBiography/MyBiography";
-import MyContact from "./pages/myContact/MyContact";
 
+import MyContact from "./pages/myContact/MyContact";
+import MyBiography from "./pages/myBiography/MyBiography.jsx";
 
 function App() {
   return (
