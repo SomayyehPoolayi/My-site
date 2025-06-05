@@ -29,6 +29,7 @@ function AboutMe(props) {
           </Link>
         </div>
       </div>
+
       <Footer />
     </div>
   );

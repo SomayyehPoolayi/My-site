@@ -1,5 +1,7 @@
-.App {
+.App {background-color: inherit;
   text-align: center;
+  height: 100vh;
+    background-color: inherit;
 }
 
 .App-logo {

@@ -1,5 +1,6 @@
 .exitWrapper {
-  margin: 200px auto;
+  margin-top: 50px;
+  margin-bottom: 230px;
   color: rgb(28, 28, 156);
   font-size: x-large;
   text-shadow: 2px 2px #8b95aa;
@@ -11,7 +12,6 @@
   color: bisque;
   background-color: rgb(87, 87, 236);
   border-radius: 8px;
-  font-size: larger;
 }
 
 .returnButton:hover {

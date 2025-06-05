@@ -6,7 +6,7 @@ import styled from "./footer.module.css";
 
 function Footer(isDarkMode) {
   return (
-    <div className="container">
+    <div>
       <div
         className={`${styled.footerWrapper} ${
           isDarkMode ? styled.darkMode : styled.lightMode

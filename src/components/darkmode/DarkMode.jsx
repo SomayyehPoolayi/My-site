@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "./darkModeChange.module.css";
 import Night from "../nightDay/Night";
 
@@ -7,7 +7,13 @@ function DarkMode(props) {
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
-   };
+  };
+
+  useEffect(() => {
+
+    document.body.classList.toggle("dark", isDarkMode);
+    document.body.classList.toggle("light", isDarkMode);
+  }, [isDarkMode]);
 
   return (
     <div
@@ -16,10 +22,7 @@ function DarkMode(props) {
       }`}
     >
       <Night isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-{/* 
-      {React.Children.map(props.children, (child) =>
-        React.cloneElement(child, { isDarkMode, toggleDarkMode })
-      )} */}
+      {}
 
       <div>{props.children}</div>
     </div>

@@ -18,7 +18,7 @@ import MyBiography from "./pages/myBiography/MyBiography.jsx";
 function App() {
   return (
     // <div className="App">
-    <DarkMode>
+    <DarkMode className="App">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/articles-page" element={<ArticlePage />} />

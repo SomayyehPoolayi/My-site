@@ -2,6 +2,7 @@ import styled from "./article.module.css";
 
 function Article(props) {
   return (
+    
     <div className={styled.articleWrapper}>
       <img src={props.article.imageUrl} />
 

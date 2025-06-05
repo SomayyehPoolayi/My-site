@@ -4,6 +4,7 @@ import styled from "./createArticle.module.css";
 import Input from "../../components/input/Input";
 import TextArea from "../../components/textArea/TextArea";
 import axios from "axios";
+import Footer from "../../components/footer/Footer";
 
 function CreateArticle() {
   const [textAreaValue, setTextAreaValue] = useState("");
@@ -62,60 +63,70 @@ function CreateArticle() {
     }));
   };
 
-  const handleCreateNewArticle=()=>{
-    axios.post("http://localhost:8000/articles",
-      {
-       "id":article.id,
-      "imageUrl": article.imageUrl,
-      "title": article.title,
-      "pageNumbers":article.pageNumbers,
-      "date":article.date,
-      "journal":article.publication,
-      })
-  }
+  const handleCreateNewArticle = () => {
+    axios.post("http://localhost:8000/articles", {
+      id: article.id,
+      imageUrl: article.imageUrl,
+      title: article.title,
+      pageNumbers: article.pageNumbers,
+      date: article.date,
+      journal: article.publication,
+    });
+  };
 
   return (
     <>
       <div className="container">
         <Header title="سمیه پولایی" />
 
-        <div className={styled.inputWrapper}>
-          <form action="">
-            <Input
-              label="عنوان"
-              name="title"
-              handleChange={handleChangeArticle}
-              type="text"
-            />
+        <>
+          {" "}
+          <div className={styled.inputWrapper}>
+            <form action="">
+              <Input
+                label="عنوان"
+                name="title"
+                handleChange={handleChangeArticle}
+                type="text"
+              />
 
-            <Input
-              label="تاریخ"
-              name="date"
-              handleChange={handleChangeArticle}
-              type="text"
-            />
+              <Input
+                label="تاریخ"
+                name="date"
+                handleChange={handleChangeArticle}
+                type="text"
+              />
 
-            <Input
-              label="کلمات کلیدی"
-              name="keyWords"
-              handleChange={handleChangeArticle}
-              type="text"
-            />
+              <Input
+                label="کلمات کلیدی"
+                name="keyWords"
+                handleChange={handleChangeArticle}
+                type="text"
+              />
 
-            <Input
-              label="محل انتشار "
-              name="publication"
-              handleChange={handleChangeArticle}
-              type="text"
-            />
+              <Input
+                label="محل انتشار "
+                name="publication"
+                handleChange={handleChangeArticle}
+                type="text"
+              />
 
-            <TextArea label="خلاصه مقاله" handleChange={handleChangeMessage} />
-          </form>
+              <TextArea
+                label="خلاصه مقاله"
+                handleChange={handleChangeMessage}
+              />
+            </form>
 
-
-            <button className={styled.buttonWrapper} onClick={handleCreateNewArticle}>ثبت مقاله </button>
+            <button
+              className={styled.buttonWrapper}
+              onClick={handleCreateNewArticle}
+            >
+              ثبت مقاله{" "}
+            </button>
           </div>
-        
+        </>
+
+        <Footer />
       </div>
     </>
   );

@@ -1,6 +1,7 @@
+import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import styled from "./exit.module.css";
-import React from "react";
+
 function Exit() {
   const handleReturn = () => {
     console.log("come back");
@@ -12,13 +13,13 @@ function Exit() {
 
       <div className={styled.exitWrapper}>
         <h1> به امید دیدار </h1>
+
+        <button className={styled.returnButton} onClick={handleReturn}>
+          ورود دوباره
+        </button>
       </div>
 
-      <>
-        <button className={styled.returnButton} onClick={handleReturn}>
-           ورود دوباره
-        </button>
-      </>
+      <Footer />
     </div>
   );
 }

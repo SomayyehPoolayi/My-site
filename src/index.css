@@ -9,6 +9,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  height: 100%;
+    background-color: inherit;
 }
 
 code {
@@ -31,11 +33,15 @@ span {
 
 .container {
   padding: 0 120px;
+  margin-bottom: 0;
+  height: 100%;
+
 }
 
 a {
   text-decoration: none;
   color: #333;
+  width: 23%;
 }
 
 * {

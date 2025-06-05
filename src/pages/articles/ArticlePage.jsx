@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import Article from "../../components/articles/Article";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Loading from "../../components/loading/Loading";
 import Footer from "../../components/footer/Footer";
 
@@ -12,7 +12,7 @@ function ArticlePage() {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    setIsLoading(true)
+    setIsLoading(true);
     axios
       .get("http://localhost:8000/articles")
       .then((result) => {
@@ -21,19 +21,21 @@ function ArticlePage() {
       })
       .catch((error) => {
         console.log(error);
-         setIsLoading(false);
+        setIsLoading(false);
       });
   }, []);
 
   return (
-    <div className={styled.articlePageWrapper}>
-      <div className="container">
-        <Header title="سمیه پولایی" />
+    <div className="container">
+      <Header title="سمیه پولایی" />
 
+      <div className={styled.articlePageWrapper}>
         <h2>آخرین مقالات</h2>
 
         {isLoading ? (
-          <p><Loading/></p>
+          <p>
+            <Loading />
+          </p>
         ) : (
           <div className={styled.article}>
             {articles.map((article) => (
@@ -43,12 +45,10 @@ function ArticlePage() {
             ))}
           </div>
         )}
-
-       
       </div>
-      
+
+      <Footer />
     </div>
-    
   );
 }
 export default ArticlePage;
