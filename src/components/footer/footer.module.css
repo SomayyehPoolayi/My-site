@@ -1,18 +1,8 @@
 .footerWrapper {
- height: 100%;
-  margin-top: 20px;
+  height: 100%;
+  /* margin: 0px; */
   padding: 10px;
-  border-radius: 12px;
-  width:100%;
-}
-
-.footerWrapper p{
-    direction: rtl;
-    margin: 40px;
-    text-align: center;
-}
-
-.lightMode {
+  width: 100%;
   background-color: rgba(224, 247, 250, 0.4);
   color: #322436;
   border: 2px solid #aaa;
@@ -20,25 +10,22 @@
   box-shadow: 5px 5px rgba(8, 8, 8, 0.4);
 }
 
-.darkMode {
-  background-color: rgba(224, 247, 250, 0.4);
-  color: #322436;
-  border: 2px solid #aaa;
-  border-radius: 8px;
-  box-shadow: 5px 5px rgba(8, 8, 8, 0.4);
+.footerWrapper p {
+  direction: rtl;
+  margin: 30px;
+  text-align: center;
 }
 
 .icons {
-    margin: 10px 30px;
-   display: flex;
+  margin: 10px 30px;
+  display: flex;
   align-items: center;
-  gap:50px;
+  gap: 40px;
 }
 
 .icons a {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 2em;
-  height: 4em;
+  height: 3em;
 }

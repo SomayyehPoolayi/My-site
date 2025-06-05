@@ -1,21 +1,22 @@
 .exitWrapper {
   margin-top: 50px;
-  margin-bottom: 230px;
+  margin-bottom: 250px;
   color: rgb(28, 28, 156);
   font-size: x-large;
   text-shadow: 2px 2px #8b95aa;
 }
 
 .returnButton {
-  padding: 12px 40px;
-  border-color: bisque;
-  color: bisque;
-  background-color: rgb(87, 87, 236);
+  margin-top: 20px;
+  height: 50px;
+  width: 15rem;
+  border: 2px solid rgb(63, 61, 84);
+  color: rgba(252, 176, 69, 1);
+  background-color: rgba(63, 61, 84, 1);
   border-radius: 8px;
+  font-size: larger;
 }
 
 .returnButton:hover {
-  box-shadow: 2px 2px rgb(173, 173, 175);
-  background-color: bisque;
-  color: rgb(87, 87, 236);
+  box-shadow: 2px 5px 15px rgb(90, 65, 112);
 }

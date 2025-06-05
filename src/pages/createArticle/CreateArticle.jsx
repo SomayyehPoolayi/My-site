@@ -82,7 +82,7 @@ function CreateArticle() {
         <>
           {" "}
           <div className={styled.inputWrapper}>
-            <form action="">
+            <form action="" className={styled.form}>
               <Input
                 label="عنوان"
                 name="title"
@@ -125,9 +125,8 @@ function CreateArticle() {
             </button>
           </div>
         </>
-
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }

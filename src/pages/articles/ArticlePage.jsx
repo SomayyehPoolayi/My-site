@@ -26,29 +26,32 @@ function ArticlePage() {
   }, []);
 
   return (
-    <div className="container">
-      <Header title="سمیه پولایی" />
+    <>
+      <div className="container">
+        <Header title="سمیه پولایی" />
 
-      <div className={styled.articlePageWrapper}>
-        <h2>آخرین مقالات</h2>
+        <div className={styled.articlePageWrapper}>
+          <h2>آخرین مقالات</h2>
 
-        {isLoading ? (
-          <p>
-            <Loading />
-          </p>
-        ) : (
-          <div className={styled.article}>
-            {articles.map((article) => (
-              <Link to={`/this-article/${article.id}`}>
-                <Article key={article.id} article={article} />
-              </Link>
-            ))}
-          </div>
-        )}
+          {isLoading ? (
+            <p>
+              <Loading />
+            </p>
+          ) : (
+            <div className={styled.article}>
+              {articles.map((article) => (
+                <Link to={`/this-article/${article.id}`}>
+                  <Article key={article.id} article={article} />
+                </Link>
+              ))}
+            </div>
+          )}
+        </div>
+
       </div>
-
+     
       <Footer />
-    </div>
+    </>
   );
 }
 export default ArticlePage;

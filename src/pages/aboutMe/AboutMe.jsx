@@ -9,29 +9,31 @@ import Footer from "../../components/footer/Footer";
 
 function AboutMe(props) {
   return (
-    <div className="container">
-      <Header title="سمیه پولایی" />
+    <>
+      <div className="container">
+        <Header title="سمیه پولایی" />
 
-      <div className={styled.aboutMeWrapper}>
-        <img src={myPic} />
+        <div className={styled.aboutMeWrapper}>
+          <img src={myPic} />
 
-        <div className={styled.buttonWrapper}>
-          <Link to="/about-me/my-biography">
-            <button onClick={<MyBiography />}>زندگینامه حرفه ای من</button>
-          </Link>
+          <div className={styled.buttonWrapper}>
+            <Link to="/about-me/my-biography">
+              <button onClick={<MyBiography />}>زندگینامه حرفه ای من</button>
+            </Link>
 
-          <Link>
-            <button onClick={openResume}> رزومه من</button>
-          </Link>
+            <Link>
+              <button onClick={openResume}> رزومه من</button>
+            </Link>
 
-          <Link to="/about-me/my-contact">
-            <button onClick={<MyContact />}>راههای ارتباطی با من</button>
-          </Link>
+            <Link to="/about-me/my-contact">
+              <button onClick={<MyContact />}>راههای ارتباطی با من</button>
+            </Link>
+          </div>
         </div>
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 }
 export default AboutMe;

@@ -1,9 +1,9 @@
 .articleWrapper {
-  height: 23%;
-  height: 450 px;
+  /* width: 23%; */
+  height: 100%;
   margin-bottom: 20px;
-  box-shadow: 0px 3px 5px #ccc;
- border-radius: 8px;
+  box-shadow: 5px 5px 15px #303030;
+  border-radius: 8px;
 }
 
 .articleWrapper h3 {
@@ -13,11 +13,10 @@
 
 .articleWrapper img {
   width: 100%;
-  }
+}
 
 .articleWrapper p {
   text-align: right;
   padding: 4px 16px;
   color: #777;
 }
-

@@ -5,11 +5,8 @@ function Header(isDarkMode) {
   // console.log(isDarkMode)
   return (
     <>
-      <div
-        className={`${styled.headerWrapper} ${
-          isDarkMode ? styled.darkMode : styled.lightMode
-        }`}
-      >
+      <div className={styled.headerWrapper}>
+        
         <div className="container">
           <div className={styled.header}>
             <ul>
@@ -42,6 +39,7 @@ function Header(isDarkMode) {
             </ul>
           </div>
         </div>
+        
       </div>
     </>
   );

@@ -10,9 +10,9 @@ function DarkMode(props) {
   };
 
   useEffect(() => {
-
-    document.body.classList.toggle("dark", isDarkMode);
-    document.body.classList.toggle("light", isDarkMode);
+    // document.body.className = isDarkMode ? "dark" : "light";
+    document.body.classList.remove(isDarkMode ? "lightMode" : "darkMode");
+    document.body.classList.add(isDarkMode ? "darkMode" : "lightMode");
   }, [isDarkMode]);
 
   return (

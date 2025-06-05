@@ -1,8 +1,12 @@
 .darkModeWrapper {
   transition: background-color 0.5s ease, 0.3s ease;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 .darkMode {
+  min-height: 100vh;
   background: #fcb045;
   background: linear-gradient(
     31deg,
@@ -11,10 +15,10 @@
     rgba(63, 61, 84, 1) 100%
   );
   color: #d4a5fc;
-  height: 100vh;
 }
 
 .lightMode {
+  min-height: 100vh;
   background: #fcb045;
   background: linear-gradient(
     346deg,
@@ -23,7 +27,6 @@
     rgba(63, 61, 84, 1) 100%
   );
   color: #3d3d3d;
-  height: 100vh;
 }
 
 .buttonChangeColor {

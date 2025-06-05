@@ -1,6 +1,7 @@
 .articlePageWrapper {
-  height: 100%;
-} 
+  height: 100vh;
+  width: 100%;
+  } 
 
 .article{
  display: flex;

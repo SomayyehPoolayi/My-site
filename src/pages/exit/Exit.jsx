@@ -8,19 +8,20 @@ function Exit() {
   };
 
   return (
-    <div className="container">
-      <Header title="سمیه پولایی" />
+    <>
+      <div className="container">
+        <Header title="سمیه پولایی" />
 
-      <div className={styled.exitWrapper}>
-        <h1> به امید دیدار </h1>
+        <div className={styled.exitWrapper}>
+          <h1> به امید دیدار </h1>
 
-        <button className={styled.returnButton} onClick={handleReturn}>
-          ورود دوباره
-        </button>
+          <button className={styled.returnButton} onClick={handleReturn}>
+            ورود دوباره
+          </button>
+        </div>
       </div>
-
       <Footer />
-    </div>
+    </>
   );
 }
 export default Exit;

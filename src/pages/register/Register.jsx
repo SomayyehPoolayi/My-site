@@ -3,13 +3,15 @@ import Header from "../../components/header/Header";
 
 function Register() {
   return (
-    <div className="container">
+    <>
+     <div className="container">
       <Header title="سمیه پولایی" />
 
       <>register</>
 
-      <Footer />
     </div>
+          <Footer /></>
+   
   );
 }
 export default Register;

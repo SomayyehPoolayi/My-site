@@ -37,9 +37,8 @@ function ThisArticle() {
             </div>
           </div>
         </>
-
-         <Footer />
       </div>
+      <Footer />
     </>
   );
 }

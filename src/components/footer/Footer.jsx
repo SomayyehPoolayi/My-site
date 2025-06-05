@@ -6,12 +6,9 @@ import styled from "./footer.module.css";
 
 function Footer(isDarkMode) {
   return (
-    <div>
-      <div
-        className={`${styled.footerWrapper} ${
-          isDarkMode ? styled.darkMode : styled.lightMode
-        }`}
-      >
+    <>
+      <div className={styled.footerWrapper}>    
+      
         <div className={styled.icons}>
           <a href="https://github.com/SomayyehPoolayi" target="_blank">
             <GitHub />
@@ -37,7 +34,7 @@ function Footer(isDarkMode) {
         </p>
 
       </div>
-    </div>
+    </>
   );
 }
 
