@@ -1,0 +1,45 @@
+.registerWrapper {
+  margin: 10px 100px;
+}
+
+.form {
+  margin: 20px 100px;
+  padding: 0 20px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+.inputWrapper label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: right;
+  width: 100%;
+  font-size: large;
+}
+
+.inputWrapper input {
+  padding: 10px;
+  border: 1px solid #acaac5;
+  text-align: right;
+  border-radius: 5px;
+  margin: 0px 60px;
+}
+
+.inputWrapper input:hover {
+  border: 2px solid rgb(104, 104, 250);
+}
+
+.buttonWrapper  {
+  margin: 10px 0;
+  height: 50px;
+  width: 15rem;
+  padding: 12px 40px;
+  border: 2px solid rgb(63, 61, 84);
+  color: rgba(252, 176, 69, 1);
+  background-color: rgba(63, 61, 84, 1);
+  border-radius: 8px;
+  font-size: larger;
+}
+
+.buttonWrapper:hover {
+  box-shadow: 5px 5px 15px rgb(90, 65, 112);
+}
+ 

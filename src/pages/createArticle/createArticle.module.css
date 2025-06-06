@@ -1,32 +1,20 @@
-.inputWrapper {
-  margin: 10px 100px;
-}
 
 .form {
-  margin: 5px 30px;
-}
-.inputWrapper label {
-  display: block;
-  margin-bottom: 5px;
-  text-align: right;
-  width: 100%;
-  font-size: large;
+  margin: 20px 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  padding: 0 20px;
 }
 
-.inputWrapper input {
-  padding: 10px;
-  border: 1px solid #acaac5;
-  text-align: right;
-  border-radius: 5px;
-  margin: 0px 60px;
+.inputWrapper Textarea{margin:auto;}
+
+.inputWrapper Textarea:hover{
+   border: 2px solid rgb(252, 176, 69);
+   box-shadow: 10px 10px 15px rgb(63, 61, 84);
 }
 
-.inputWrapper input:hover {
-  border: 2px solid rgb(104, 104, 250);
-}
 
 .buttonWrapper  {
-  margin-top: 20px;
+  margin: 10px 0;
   height: 50px;
   width: 15rem;
   padding: 12px 40px;
@@ -38,6 +26,6 @@
 }
 
 .buttonWrapper:hover {
-  box-shadow: 2px 5px 15px rgb(90, 65, 112);
+  box-shadow: 5px 5px 15px rgb(90, 65, 112);
 }
  

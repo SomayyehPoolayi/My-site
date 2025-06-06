@@ -1,14 +1,25 @@
 import styled from "./header.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Header(isDarkMode) {
-  // console.log(isDarkMode)
+  const navigate = useNavigate();
+
+  const handleRegisterInputPage = () => {
+    navigate("/Register");
+  };
+
   return (
     <>
       <div className={styled.headerWrapper}>
-        
         <div className="container">
           <div className={styled.header}>
+            <button
+              className={styled.buttonWrapper}
+              onClick={handleRegisterInputPage}
+            >
+              ثبت نام / ورود
+            </button>
+
             <ul>
               <li>
                 <Link to="/logout">خروج</Link>
@@ -29,17 +40,15 @@ function Header(isDarkMode) {
               <li>
                 <Link to="/articles-page"> لیست مقالات</Link>
               </li>
-             
+
               <li>
                 <Link to="/">
                   <h3>سمیه پولایی</h3>
                 </Link>
               </li>
-            
             </ul>
           </div>
         </div>
-        
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 
-import styled from "./input.module.css";
+import styled from "./inputArticle.module.css";
 
 function Input(props) {
     

@@ -1,13 +1,14 @@
 import { useState } from "react";
 import Header from "../../components/header/Header";
 import styled from "./createArticle.module.css";
-import Input from "../../components/input/Input";
+import InputArticle from "../../components/input/InputArticle";
 import TextArea from "../../components/textArea/TextArea";
 import axios from "axios";
 import Footer from "../../components/footer/Footer";
 
 function CreateArticle() {
   const [textAreaValue, setTextAreaValue] = useState("");
+
   const [article, setArticle] = useState({
     title: "",
     date: "",
@@ -17,39 +18,6 @@ function CreateArticle() {
   });
 
   const handleChangeArticle = (e) => {
-    // eslint-disable-next-line default-case
-    //   switch (e.target.name) {
-
-    //     case "title":
-    //       setArticle((prevState) => ({
-    //         ...prevState,
-    //         title: e.target.value,
-    //       }));
-    //       break;
-
-    //       case "date":
-    //       setArticle((prevState) => ({
-    //         ...prevState,
-    //         date: e.target.value,
-    //       }));
-    //       break;
-
-    //       case "keyWords":
-    //       setArticle((prevState) => ({
-    //         ...prevState,
-    //         keyWords: e.target.value,
-    //       }));
-    //       break;
-
-    //       case "publication":
-    //       setArticle((prevState) => ({
-    //         ...prevState,
-    //         keyWords: e.target.value,
-    //       }));
-    //       break;
-    //   }
-    // };
-
     setArticle((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
@@ -80,31 +48,30 @@ function CreateArticle() {
         <Header title="سمیه پولایی" />
 
         <>
-          {" "}
           <div className={styled.inputWrapper}>
             <form action="" className={styled.form}>
-              <Input
+              <InputArticle
                 label="عنوان"
                 name="title"
                 handleChange={handleChangeArticle}
                 type="text"
               />
 
-              <Input
+              <InputArticle
                 label="تاریخ"
                 name="date"
                 handleChange={handleChangeArticle}
                 type="text"
               />
 
-              <Input
+              <InputArticle
                 label="کلمات کلیدی"
                 name="keyWords"
                 handleChange={handleChangeArticle}
                 type="text"
               />
 
-              <Input
+              <InputArticle
                 label="محل انتشار "
                 name="publication"
                 handleChange={handleChangeArticle}
@@ -115,14 +82,15 @@ function CreateArticle() {
                 label="خلاصه مقاله"
                 handleChange={handleChangeMessage}
               />
-            </form>
-
-            <button
+              <button
               className={styled.buttonWrapper}
               onClick={handleCreateNewArticle}
             >
               ثبت مقاله{" "}
             </button>
+            </form>
+
+            
           </div>
         </>
       </div>

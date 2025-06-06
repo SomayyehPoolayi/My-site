@@ -14,10 +14,10 @@
   text-align: center;
   height: 70px;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   color: #322436;
-  font-size: larger;
+  font-size: 18px;
 }
 
 
@@ -33,11 +33,26 @@
 }
 
 .header li:hover {
-  color: #241a27;
-  font-size: larger;
-}
+  color: rgb(248, 173, 68);
+  }
 
 .header ul h3 {
   margin-left: 80px;
   cursor: pointer;
  }
+
+ .buttonWrapper  {
+  margin: 10px 40px 10px 0;
+  height: 40px;
+  width: 10rem;
+  padding: 10px 20px;
+  border: 2px solid rgb(63, 61, 84);
+  color: rgba(252, 176, 69, 1);
+  background-color: rgba(63, 61, 84, 1);
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.buttonWrapper:hover {
+  box-shadow: 5px 5px 15px rgb(90, 65, 112);
+}

@@ -1,0 +1,29 @@
+.inputWrapper{
+margin: 50px 100px;
+}
+
+.inputWrapper label{
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+    width:100%;
+    font-size: large;
+}
+
+.inputWrapper input{
+    width:70%;
+    padding: 10px;
+    border:1px solid #acaac5;
+    text-align: right;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.inputWrapper input:hover{
+   border: 2px solid rgb(252, 176, 69);
+   box-shadow: 10px 10px 15px rgb(63, 61, 84);
+}
+
+
+
+
