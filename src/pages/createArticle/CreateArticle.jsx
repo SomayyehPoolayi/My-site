@@ -83,14 +83,12 @@ function CreateArticle() {
                 handleChange={handleChangeMessage}
               />
               <button
-              className={styled.buttonWrapper}
-              onClick={handleCreateNewArticle}
-            >
-              ثبت مقاله{" "}
-            </button>
+                className={styled.buttonWrapper}
+                onClick={handleCreateNewArticle}
+              >
+                ثبت مقاله{" "}
+              </button>
             </form>
-
-            
           </div>
         </>
       </div>

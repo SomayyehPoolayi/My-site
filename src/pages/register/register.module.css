@@ -1,10 +1,10 @@
 .registerWrapper {
-  margin: 10px 100px;
+  margin: 40px 100px;
 }
 
 .form {
-  margin: 20px 100px;
-  padding: 0 20px;
+  margin: 40px 100px;
+  padding: 20px;
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 .inputWrapper label {
@@ -28,10 +28,10 @@
 }
 
 .buttonWrapper  {
-  margin: 10px 0;
-  height: 50px;
-  width: 15rem;
-  padding: 12px 40px;
+  margin: 10px 0 25px 0;
+  height: 40px;
+  width: 10rem;
+  padding: 8px 40px;
   border: 2px solid rgb(63, 61, 84);
   color: rgba(252, 176, 69, 1);
   background-color: rgba(63, 61, 84, 1);

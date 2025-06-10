@@ -6,7 +6,7 @@ function InputUser(props) {
     <div className={styled.inputWrapper}>
       <label>{props.label} </label>
       <input
-        type=""
+        type={props.type}
         name={props.name}
         onChange={props.handleRegister}
       />

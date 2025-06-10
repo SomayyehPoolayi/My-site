@@ -1,24 +1,8 @@
 {
   "users": [
     {
-      "id": "",
-      "firstName": "",
-      "lastName": "",
-      "userName": "",
-      "passWord": "",
-      "email": ""
-    },
-    {
-      "id": "f7c7",
-      "firstName": "",
-      "lastName": "",
-      "userName": "",
-      "passWord": "",
-      "email": ""
-    },
-    {
-      "id": "519a",
-      "firstName": "",
+      "id": "1",
+      "firstName": "s",
       "lastName": "",
       "userName": "",
       "passWord": "",

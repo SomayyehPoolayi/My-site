@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "./darkModeChange.module.css";
 import Night from "../nightDay/Night";
+import AnimatedLogo from "../animatedLogo/AnimatedLogo";
 
 function DarkMode(props) {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -10,7 +11,7 @@ function DarkMode(props) {
   };
 
   useEffect(() => {
-    // document.body.className = isDarkMode ? "dark" : "light";
+    document.body.className = isDarkMode ? "dark" : "light";
     document.body.classList.remove(isDarkMode ? "lightMode" : "darkMode");
     document.body.classList.add(isDarkMode ? "darkMode" : "lightMode");
   }, [isDarkMode]);
@@ -21,10 +22,9 @@ function DarkMode(props) {
         isDarkMode ? styled.darkMode : styled.lightMode
       }`}
     >
-      <Night isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      {}
-
-      <div>{props.children}</div>
+         <Night isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} /> 
+       
+         <div>{props.children}</div>
     </div>
   );
 }

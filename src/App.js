@@ -14,15 +14,11 @@ import "./";
 
 import MyContact from "./pages/myContact/MyContact";
 import MyBiography from "./pages/myBiography/MyBiography.jsx";
-
-
+import AnimatedLogo from "./components/animatedLogo/AnimatedLogo.jsx";
 
 function App() {
- 
-
   return (
-
-<DarkMode className="App">
+    <DarkMode className="App">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/articles-page" element={<ArticlePage />} />
@@ -35,12 +31,9 @@ function App() {
 
         <Route path="/about-me/my-biography" element={<MyBiography />} />
         <Route path="/about-me/my-contact" element={<MyContact />} />
-         <Route path="*" element={<NotFound />} />
-      
+        <Route path="*" element={<NotFound />} />
       </Routes>
-     
     </DarkMode>
- 
   );
 }
 

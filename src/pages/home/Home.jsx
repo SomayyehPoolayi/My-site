@@ -11,6 +11,7 @@ function Home(props) {
         <div className={styled.homeWrapper}>
           <h1> ; به وب سایت من خوش آمدید</h1>
           <br />
+          <br />
           <h2>" جایی برای معرفی خودم, دیدگاها و تجربیات حرفه ای ام "</h2>{" "}
         </div>
       </div>

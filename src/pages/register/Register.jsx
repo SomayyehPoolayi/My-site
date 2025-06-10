@@ -16,7 +16,7 @@ function Register() {
 
   const handleRegister = (e) => {
     setUser((prevState) => ({
-      // ...prevState,
+      ...prevState,
       [e.target.name]: e.target.value,
     }));
   };
@@ -44,45 +44,44 @@ function Register() {
                 name="firstName"
                 handleChange={handleRegister}
                 type="text"
-                // value={user.firstName}
               />
-
+             
               <InputUser
                 label="نام خانوادگی"
                 name="lastName"
                 handleChange={handleRegister}
                 type="text"
-                // value={user.lastName}
               />
-
+             
               <InputUser
                 label="نام کاربری"
                 name="userName"
                 handleChange={handleRegister}
                 type="text"
-                // value={user.userName}
               />
-
+             
               <InputUser
                 label=" رمز عبور"
                 name="passWord"
                 handleChange={handleRegister}
                 type="password"
-                // value={user.passWord}
               />
-
+             
               <InputUser
                 label=" ایمیل "
                 name="email"
                 handleChange={handleRegister}
                 type="email"
-                // value={user.email}
               />
-                <button onClick={handleAddNewUser} className={styled.buttonWrapper}>
-              ثبت نام / ورود
-            </button>{" "}
+             
+              <button
+                onClick={handleAddNewUser}
+                className={styled.buttonWrapper}
+              >
+                ثبت نام 
+              </button>{" "}
+            
             </form>
-          
           </div>
         </>
       </div>
