@@ -36,6 +36,7 @@ function Register() {
       <div className="container">
         <Header title="سمیه پولایی" />
 
+        {/* register part */}
         <>
           <div className={styled.registerWrapper}>
             <form action="" className={styled.form}>
@@ -45,45 +46,44 @@ function Register() {
                 handleChange={handleRegister}
                 type="text"
               />
-             
               <InputUser
                 label="نام خانوادگی"
                 name="lastName"
                 handleChange={handleRegister}
                 type="text"
               />
-             
               <InputUser
                 label="نام کاربری"
                 name="userName"
                 handleChange={handleRegister}
                 type="text"
               />
-             
               <InputUser
                 label=" رمز عبور"
                 name="passWord"
                 handleChange={handleRegister}
                 type="password"
               />
-             
               <InputUser
                 label=" ایمیل "
                 name="email"
                 handleChange={handleRegister}
                 type="email"
               />
-             
               <button
                 onClick={handleAddNewUser}
                 className={styled.buttonWrapper}
               >
-                ثبت نام 
+                ثبت نام
               </button>{" "}
-            
             </form>
           </div>
         </>
+
+        {/* input part */}
+        <>
+        </>
+     
       </div>
       <Footer />
     </>

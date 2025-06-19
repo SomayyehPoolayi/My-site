@@ -12,30 +12,23 @@
     },
     {
       "id": "2",
-      "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
-      "title": "test 2",
-      "pageNumbers": 5,
-      "date": 1400,
-      "journal": "دومین همایش بین المللی شهر هوشمند، چالش ها و راهبردها",
-      "content": " متن دو"
+      "imageUrl": "https://civilica.com/media/l/9050_tn.webp",
+      "title": "Governance of IoT in order to Move ahead of the calendar & live the future today",
+      "pageNumbers": 8,
+      "date": 1396,
+      "journal": "چهارمین کنفرانس بین المللی مطالعات نوین در علوم کامپیوتر و فناوری اطلاعات",
+      "content": " The Internet of Things (IoT) is a system of interrelated computing devices, mechanical and digital machines, objects, animals or people that are provided with unique identifiers and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction. The Internet of Things (IoT) world may be exciting, but there are serious technical challenges that need to address, especially by developers. In this handwriting, learn how to meet the security, analytics, and testing requirements for IoT applications. A thing, in the Internet of Things, can be a person with a heart monitor implant, a farm animal with a biochip transponder, an automobile that has built-in sensors to alert the driver when tire pressure is low -- or any other natural or man-made object that can be assigned an IP address and provided with the ability to transfer data over a network. IoT has evolved from the convergence of wireless technologies, micro-electromechanical systems (MEMS), micro services and the internet. The convergence has helped tear down the silo walls between operational technologies (OT) and information technology (IT), allowing unstructured machine-generated data to analyze for insights that will drive improvements. The Internet of things (IoT) is the interconnection via the Internet of computing devices embedded in everyday objects, enabling them to send and receive data. If one thing can prevent the Internet of things from transforming the way we live and work, it will be a breakdown in security. Therefore, there are some important challenges in privacy and maintaining security of the Internet of things. In this paper, we are going to list the typical items which can be major challenges facing IoT.",
+      "language": "انگلیسی"
     },
     {
       "id": "3",
-      "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
-      "title": "test3",
-      "pageNumbers": 5,
-      "date": 1400,
-      "journal": "دومین همایش بین المللی شهر هوشمند، چالش ها و راهبردها",
-      "content": " متن سه"
-    },
-    {
-      "id": "4",
-      "imageUrl": "https://civilica.com/media/l/75224_tn.webp",
-      "title": "test4",
-      "pageNumbers": 5,
-      "date": 1400,
-      "journal": "دومین همایش بین المللی شهر هوشمند، چالش ها و راهبردها",
-      "content": " متن چهار"
+      "imageUrl": "https://civilica.com/media/l/5888_tn.webp",
+      "title": "Engineering geological problems caused by city planning and its management countermeasure",
+      "pageNumbers": 6,
+      "date": 1394,
+      "journal": "هفتمین کنفرانس ملی برنامه ریزی و مدیریت شهری با تاکید بر راهبردهای توسعه شهری",
+      "content": " Geological environment condition is the basic factor for city existence and stability and the foundation for city construction. In city construction belts with comparably stable earth crust and good geological environment is preferable. Hence, engineering geological condition must be taken into consideration during urban construction. And city is a place where the geological environment is much influenced by human activities whose forming type, function, land used and development have a close relationship with geological environment. To survive and get maximum benefit, human make the best of environment to construct in many ways. Nowadays city planning and construction is developed from simplex plane style to the dimensional style. Increase of high-rising, unceasing construction of substructure work, development of higher, deeper, longer, larger, heavier, clustered urban construction arouse engineering geological problems brought by city construction. Characteristic of city construction is that it comes along with city and its harmfulness increases with city development. Yet an effective management way is to keep to the conception that human and geological environment should be in harmony among planning, construction and geological environment",
+      "language": "انگلیسی"
     }
   ]
 }

@@ -19,7 +19,7 @@ const typing = {
   animation: 'typing 2.2s steps(4, end) forwards, blink 0.7s step-end infinite',
   whiteSpace: 'nowrap',
   overflow: 'hidden',
-  borderRight: '4px solid #c49360',
+  borderRight: '3px solid #3d3d3d',
   width: 0,
 };
 
@@ -35,9 +35,9 @@ const styles = {
     color: '#3e342c',
   },
   monitor: {
-    width: 100,
-    height: 80,
-    border: '3px solid #c49360',
+    width: 90,
+    height: 70,
+    border: '3px solid #3d3d3d',
     borderRadius: 8,
     position: 'relative',
     margin: '0 auto',
@@ -47,7 +47,7 @@ const styles = {
     boxShadow: '5px 5px 12px rgba(128, 109, 48, 0.97)',
   },
   code: {
-    color: '#c49360',
+    color: '#3d3d3d',
     fontWeight: 500,
     fontSize: 28,
     ...typing,

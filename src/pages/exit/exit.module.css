@@ -1,15 +1,17 @@
 .exitWrapper {
-  margin-top: 50px;
+  margin-top: 45px;
   margin-bottom: 250px;
-  color: rgb(28, 28, 156);
+  color: #3d3d3d;
   font-size: x-large;
   text-shadow: 2px 2px #8b95aa;
+  display: flex;
+  justify-content: space-around;
 }
 
 .returnButton {
-  margin-top: 20px;
+  margin: 30px;
   height: 50px;
-  width: 15rem;
+  width: 12rem;
   border: 2px solid rgb(63, 61, 84);
   color: rgba(252, 176, 69, 1);
   background-color: rgba(63, 61, 84, 1);

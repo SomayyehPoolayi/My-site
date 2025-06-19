@@ -34,10 +34,6 @@ function Header(isDarkMode) {
               </li>
 
               <li>
-                <Link to="/search">جستجوی مقاله</Link>
-              </li>
-
-              <li>
                 <Link to="/articles-page"> لیست مقالات</Link>
               </li>
 
@@ -47,7 +43,6 @@ function Header(isDarkMode) {
                 </Link>
               </li>
             </ul>
-         
           </div>
         </div>
       </div>

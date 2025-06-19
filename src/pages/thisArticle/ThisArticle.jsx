@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Footer from "../../components/footer/Footer";
+import { openCompleteArticle } from "../../utils/openCompleteArticle";
 
 function ThisArticle() {
   const params = useParams();
@@ -35,6 +36,13 @@ function ThisArticle() {
               <p> {article.journal} </p>
               <span>{article.content} </span>
             </div>
+
+            <button
+              onClick={openCompleteArticle}
+              className={styled.buttonWrapper}
+            >
+              دریافت کامل مقاله
+            </button>
           </div>
         </>
       </div>

@@ -14,11 +14,12 @@ function Exit() {
 
         <div className={styled.exitWrapper}>
           <h1> به امید دیدار </h1>
-
-          <button className={styled.returnButton} onClick={handleReturn}>
-            ورود دوباره
-          </button>
         </div>
+       
+        <button className={styled.returnButton} onClick={handleReturn}>
+          ورود دوباره
+        </button>
+      
       </div>
       <Footer />
     </>

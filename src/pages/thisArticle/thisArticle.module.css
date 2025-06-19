@@ -1,5 +1,6 @@
 .thisArticleWrapper {
-  margin-top: 50px;
+  margin: 50px 0px;
+  
 }
 
 .thisArticleInfo {
@@ -23,3 +24,20 @@
   display: flex;
   text-align: justify;
 }
+
+.buttonWrapper  {
+  margin: 20px 0 25px 0;
+  height: 40px;
+  width:15rem;
+  padding: 8px 40px;
+  border: 2px solid rgb(63, 61, 84);
+  color: rgba(252, 176, 69, 1);
+  background-color: rgba(63, 61, 84, 1);
+  border-radius: 8px;
+  font-size: larger;
+}
+
+.buttonWrapper:hover {
+  box-shadow: 5px 5px 15px rgb(90, 65, 112);
+}
+ 
