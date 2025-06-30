@@ -13,12 +13,7 @@ function Header(isDarkMode) {
       <div className={styled.headerWrapper}>
         <div className="container">
           <div className={styled.header}>
-            <button
-              className={styled.buttonWrapper}
-              onClick={handleRegisterInputPage}
-            >
-              ثبت نام / ورود
-            </button>
+       
 
             <ul>
               <li>
@@ -43,7 +38,7 @@ function Header(isDarkMode) {
                 </Link>
               </li>
             </ul>
-            
+
           </div>
         </div>
       </div>

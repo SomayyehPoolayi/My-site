@@ -3,11 +3,15 @@ import Footer from "../../components/footer/Footer";
 import styled from "./inputPage.module.css";
 import HomeHeader from "../../components/homeHeader/HomeHeader";
 
-function InputPage() {
-   const navigate = useNavigate();
- 
-   const handleRegisterPage= () => {
+function InputPage(props,isDarkMode) {
+  const navigate = useNavigate();
+
+  const handleRegisterPage = () => {
     navigate("/Register");
+  };
+
+  const handleUserInput = () => {
+    navigate("/MainHome");
   };
 
   return (
@@ -19,17 +23,16 @@ function InputPage() {
           <div className={styled.inputWrapper}>
             <form action="" className={styled.form}>
               <>
-               <div>
-                <label htmlFor="">نام کاربری</label>
-                <input type="text" />
-              </div>
+                <div>
+                  <label htmlFor="">نام کاربری</label>
+                  <input type="text" />
+                </div>
 
-              <div>
-                <label htmlFor=""> رمز عبور</label>
-                <input type="password" />
-              </div>
+                <div>
+                  <label htmlFor=""> رمز عبور</label>
+                  <input type="password" />
+                </div>
               </>
-             
 
               <div className={styled.buttonPart}>
                 <div>
@@ -43,9 +46,9 @@ function InputPage() {
                 </div>
 
                 <div>
-                    <p>قبلا ثبت نام کرده ام</p>
+                  <p>قبلا ثبت نام کرده ام</p>
                   <button
-                    // onClick={handleUser}
+                    onClick={handleUserInput}
                     className={styled.buttonWrapper}
                   >
                     ورود
@@ -56,7 +59,7 @@ function InputPage() {
           </div>
         </>
       </div>
-      
+
       <Footer />
     </>
   );

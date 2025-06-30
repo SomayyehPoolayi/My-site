@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Loading from "../../components/loading/Loading";
 import Footer from "../../components/footer/Footer";
 
-function ArticlePage() {
+function ArticlePage(isDarkMode) {
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 

@@ -2,7 +2,7 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import styled from "./myBiography.module.css";
 
-function MyBiography() {
+function MyBiography(isDarkMode) {
   return (
     <>
       <div className="container">

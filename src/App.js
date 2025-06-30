@@ -10,10 +10,11 @@ import ThisArticle from "./pages/thisArticle/ThisArticle";
 import NotFound from "./pages/page404/NotFound";
 import DarkMode from "./components/darkmode/DarkMode";
 import "./";
-
 import MyContact from "./pages/myContact/MyContact";
 import MyBiography from "./pages/myBiography/MyBiography.jsx";
 import InputPage from "./pages/inputUser/InputPage";
+import MainHome from "./pages/mainHome/MainHome";
+
 
 function App() {
   return (
@@ -25,10 +26,11 @@ function App() {
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/logout" element={<Exit />} />
         <Route path="/register" element={<Register />} />
-         <Route path="/Input" element={<InputPage />} />
+        <Route path="/Input" element={<InputPage />} />
         <Route path="/this-article/:id" element={<ThisArticle />} />
         <Route path="/about-me/my-biography" element={<MyBiography />} />
         <Route path="/about-me/my-contact" element={<MyContact />} />
+        <Route path="/MainHome" element={<MainHome />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </DarkMode>

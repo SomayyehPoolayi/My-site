@@ -6,7 +6,7 @@ import TextArea from "../../components/textArea/TextArea";
 import axios from "axios";
 import Footer from "../../components/footer/Footer";
 
-function CreateArticle() {
+function CreateArticle(isDarkMode) {
   const [textAreaValue, setTextAreaValue] = useState("");
 
   const [article, setArticle] = useState({

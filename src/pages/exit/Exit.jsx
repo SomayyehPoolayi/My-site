@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
 import styled from "./exit.module.css";
+import HomeHeader from "../../components/homeHeader/HomeHeader";
 
-function Exit() {
+function Exit(isDarkMode) {
 
   const navigate = useNavigate();
   const handleReturn = () => {
@@ -13,7 +13,7 @@ function Exit() {
   return (
     <>
       <div className="container">
-        <Header title="سمیه پولایی" />
+        <HomeHeader title="سمیه پولایی" />
 
         <div className={styled.exitWrapper}>
           <h1> به امید دیدار </h1>

@@ -2,7 +2,7 @@ import Footer from "../../components/footer/Footer";
 import HomeHeader from "../../components/homeHeader/HomeHeader";
 import styled from "./home.module.css";
 
-function Home(props) {
+function Home(props,isDarkMode) {
   return (
     <>
       <div className="container">

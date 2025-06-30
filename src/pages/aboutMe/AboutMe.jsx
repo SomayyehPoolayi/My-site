@@ -7,7 +7,7 @@ import MyBiography from "../myBiography/MyBiography";
 import MyContact from "../myContact/MyContact";
 import Footer from "../../components/footer/Footer";
 
-function AboutMe(props) {
+function AboutMe(props,isDarkMode) {
   return (
     <>
       <div className="container">

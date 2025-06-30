@@ -6,7 +6,7 @@ import axios from "axios";
 import Footer from "../../components/footer/Footer";
 import { openCompleteArticle } from "../../utils/openCompleteArticle";
 
-function ThisArticle() {
+function ThisArticle(isDarkMode) {
   const params = useParams();
   const [article, setArticle] = useState({});
 

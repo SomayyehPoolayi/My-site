@@ -1,7 +1,7 @@
 import Header from "../../components/header/Header";
 import styled from "./notFound.module.css"
 
-function NotFound() {
+function NotFound(isDarkMode) {
   return (
     <div className="container">
       <Header title="سمیه پولایی" />

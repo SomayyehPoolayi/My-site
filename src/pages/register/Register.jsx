@@ -5,7 +5,7 @@ import { useState } from "react";
 import InputUser from "../../components/inputUsers/InputUser";
 import HomeHeader from "../../components/homeHeader/HomeHeader";
 
-function Register() {
+function Register(isDarkMode) {
   const [user, setUser] = useState({
     firstName: "",
     lastName: "",
@@ -77,13 +77,10 @@ function Register() {
                 ثبت نام
               </button>{" "}
             </form>
+
           </div>
         </>
-
-        {/* input part */}
-        <>
-        </>
-     
+       
       </div>
       <Footer />
     </>
