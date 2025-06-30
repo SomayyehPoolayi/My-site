@@ -7,25 +7,7 @@
   padding: 20px;
    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
-.inputWrapper label {
-  display: block;
-  margin-bottom: 5px;
-  text-align: right;
-  width: 100%;
-  font-size: large;
-}
 
-.inputWrapper input {
-  padding: 10px;
-  border: 1px solid #acaac5;
-  text-align: right;
-  border-radius: 5px;
-  margin: 0px 60px;
-}
-
-.inputWrapper input:hover {
-  border: 2px solid rgb(104, 104, 250);
-}
 
 .buttonWrapper  {
   margin: 10px 0 25px 0;

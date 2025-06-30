@@ -1,12 +1,12 @@
 import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
+import HomeHeader from "../../components/homeHeader/HomeHeader";
 import styled from "./home.module.css";
 
 function Home(props) {
   return (
     <>
       <div className="container">
-        <Header title="سمیه پولایی" />
+        <HomeHeader title="سمیه پولایی" />
 
         <div className={styled.homeWrapper}>
           <h1> ; به وب سایت من خوش آمدید</h1>

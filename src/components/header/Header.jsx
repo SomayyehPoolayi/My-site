@@ -5,7 +5,7 @@ function Header(isDarkMode) {
   const navigate = useNavigate();
 
   const handleRegisterInputPage = () => {
-    navigate("/Register");
+    navigate("/Input");
   };
 
   return (
@@ -43,6 +43,7 @@ function Header(isDarkMode) {
                 </Link>
               </li>
             </ul>
+            
           </div>
         </div>
       </div>

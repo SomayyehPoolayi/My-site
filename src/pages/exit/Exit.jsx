@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import styled from "./exit.module.css";
 
 function Exit() {
+
+  const navigate = useNavigate();
   const handleReturn = () => {
-    console.log("come back");
+    navigate("/Input");
   };
 
   return (

@@ -18,6 +18,8 @@ margin: 50px 50px;
     border-radius: 5px;
 }
 
+
+
 .inputWrapper input:hover{
     border: 2px solid rgb(104, 104, 250);
 }

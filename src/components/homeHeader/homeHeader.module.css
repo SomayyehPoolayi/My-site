@@ -1,0 +1,37 @@
+.headerWrapper {
+  transition: all 0.3s ease-in-out;
+  padding: 0.5rem;
+  border-radius: 12px;
+  background-color: rgba(224, 247, 250, 0.4);
+  color:  #322436;
+  border: 2px solid #aaa;
+  border-radius: 8px;
+  box-shadow: 5px 5px rgba(8, 8, 8, 0.4);
+}
+    
+
+.header {
+  text-align: center;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #322436;
+  font-size: 18px;
+}
+
+.buttonWrapper  {
+  margin: 10px 40px 10px 0;
+  height: 40px;
+  width: 10rem;
+  padding: 10px 20px;
+  border: 2px solid rgb(63, 61, 84);
+  color: rgba(252, 176, 69, 1);
+  background-color: rgba(63, 61, 84, 1);
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.buttonWrapper:hover {
+  box-shadow: 5px 5px 15px rgb(90, 65, 112);
+}

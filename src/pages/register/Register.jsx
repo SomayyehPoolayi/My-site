@@ -1,9 +1,9 @@
 import axios from "axios";
 import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
 import styled from "./register.module.css";
 import { useState } from "react";
 import InputUser from "../../components/inputUsers/InputUser";
+import HomeHeader from "../../components/homeHeader/HomeHeader";
 
 function Register() {
   const [user, setUser] = useState({
@@ -34,7 +34,7 @@ function Register() {
   return (
     <>
       <div className="container">
-        <Header title="سمیه پولایی" />
+        <HomeHeader title="سمیه پولایی" />
 
         {/* register part */}
         <>
