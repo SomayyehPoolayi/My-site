@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import styled from "./darkModeChange.module.css";
 import Night from "../nightDay/Night";
 
+
 function DarkMode(props) {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  
 
   const toggleDarkMode = () => {
     setIsDarkMode((prevMode) => !prevMode);
@@ -11,8 +13,10 @@ function DarkMode(props) {
 
   useEffect(() => {
     document.body.className = isDarkMode ? "dark" : "light";
-    document.body.classList.remove(isDarkMode ? "lightMode" : "darkMode");
-    document.body.classList.add(isDarkMode ? "darkMode" : "lightMode");
+        document.body.classList.remove(isDarkMode ? "lightMode" : "darkMode");
+       document.body.classList.add(isDarkMode ? "darkMode" : "lightMode");
+
+      
   }, [isDarkMode]);
 
   return (
@@ -21,9 +25,9 @@ function DarkMode(props) {
         isDarkMode ? styled.darkMode : styled.lightMode
       }`}
     >
-      <Night isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-
-      <div>{props.children}</div>
+         <Night isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} /> 
+       
+         <div>{props.children}</div>
     </div>
   );
 }

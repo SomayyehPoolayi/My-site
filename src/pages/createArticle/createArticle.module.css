@@ -1,11 +1,13 @@
 
 .form {
-  margin: 20px 100px;
+  margin: 20px 110px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  padding: 0 20px;
+  padding: 5px 20px;
 }
 
-.inputWrapper Textarea{margin:auto;}
+Textarea{
+  margin:10px 0px;
+width: 70%;}
 
 .inputWrapper Textarea:hover{
    border: 2px solid rgb(252, 176, 69);

@@ -3,16 +3,17 @@
 
 .textareaWrapper label {
   display: block;
-  margin-bottom: 20px;
+  margin: 20px 100px;
   text-align: right;
 }
 
 .textareaWrapper textarea {
-  width: 100%;
+  width: 75%;
   min-height: 200px;
   border: 1px solid #acaac5;
   text-align: right;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .textareaWrapper textarea:hover {
