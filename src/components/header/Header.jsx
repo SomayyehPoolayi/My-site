@@ -1,19 +1,41 @@
+import { useEffect, useState } from "react";
 import styled from "./header.module.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
+import axios from "axios";
 
-function Header(isDarkMode) {
-  const navigate = useNavigate();
+function Header(props,isDarkMode) {
+ 
+  const [users, setUsers] = useState([]);
 
-  const handleRegisterInputPage = () => {
-    navigate("/Input");
-  };
+  useEffect(() => {
+    
+    axios
+      .get("http://localhost:5000/users")
+      .then((result) => {
+        setUsers(result.data);
+         })
+      .catch((error) => {
+        console.log(error);
+            });
+  }, []);
+
+
 
   return (
     <>
       <div className={styled.headerWrapper}>
         <div className="container">
           <div className={styled.header}>
-       
+            <div className={styled.userName}>
+              
+              { users ? (
+                <p>سلام {users.userName}</p>
+              ) : (
+                alert("شما باید ثبت نام کنید")
+              )
+            }
+            
+            </div>
 
             <ul>
               <li>
@@ -38,11 +60,11 @@ function Header(isDarkMode) {
                 </Link>
               </li>
             </ul>
-
           </div>
         </div>
       </div>
     </>
   );
 }
+
 export default Header;
