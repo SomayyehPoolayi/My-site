@@ -39,6 +39,8 @@ function CreateArticle(isDarkMode) {
       pageNumbers: article.pageNumbers,
       date: article.date,
       journal: article.publication,
+      content:article.message,
+      language:article.language
     });
   };
 
@@ -65,8 +67,15 @@ function CreateArticle(isDarkMode) {
               />
 
               <InputArticle
-                label="کلمات کلیدی"
-                name="keyWords"
+                label=" صفحات"
+                name="pageNumbers"
+                handleChange={handleChangeArticle}
+                type="number"
+              />
+
+              <InputArticle
+                label=" زبان"
+                name="language"
                 handleChange={handleChangeArticle}
                 type="text"
               />
@@ -80,6 +89,7 @@ function CreateArticle(isDarkMode) {
 
               <TextArea
                 label="خلاصه مقاله"
+                name="message"
                 handleChange={handleChangeMessage}
               />
               <button

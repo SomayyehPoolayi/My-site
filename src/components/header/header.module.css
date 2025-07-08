@@ -14,7 +14,7 @@
   text-align: center;
   height: 70px;
   display: flex;
-  justify-content:flex-end;
+   justify-content: space-between;
   align-items: center;
   color: #322436;
   font-size: 18px;

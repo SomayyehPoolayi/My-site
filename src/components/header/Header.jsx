@@ -1,24 +1,9 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import styled from "./header.module.css";
-import { Link} from "react-router-dom";
-import axios from "axios";
+import { Link } from "react-router-dom";
 
-function Header(props,isDarkMode) {
- 
-  const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    
-    axios
-      .get("http://localhost:5000/users")
-      .then((result) => {
-        setUsers(result.data);
-         })
-      .catch((error) => {
-        console.log(error);
-            });
-  }, []);
-
+function Header(props, isDarkMode) {
 
 
   return (
@@ -27,14 +12,10 @@ function Header(props,isDarkMode) {
         <div className="container">
           <div className={styled.header}>
             <div className={styled.userName}>
-              
-              { users ? (
-                <p>سلام {users.userName}</p>
-              ) : (
-                alert("شما باید ثبت نام کنید")
-              )
-            }
-            
+             
+
+                <p>سلام {props.userName}</p>
+             
             </div>
 
             <ul>

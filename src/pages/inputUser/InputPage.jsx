@@ -10,9 +10,9 @@ function InputPage(props, isDarkMode) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-    const handleLogin = async () => {
+  const handleLogin = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/users");
+      const response = await axios.get("http://localhost:10000/users");
       const users = response.data;
 
       const matchedUser = users.find(
@@ -20,13 +20,9 @@ function InputPage(props, isDarkMode) {
       );
 
       if (matchedUser) {
-        alert("ورود موفقیت آمیز بود");
-        navigate("/MainHome", {
-          state: {
-            loggedIn: true,
-            userName: matchedUser.userName,
-          },
-        });
+        navigate("/MainHome");
+        console.log(username)
+      
       } else {
         alert("نام کاربری یا رمز عبور اشتباه است");
       }
@@ -47,7 +43,11 @@ function InputPage(props, isDarkMode) {
 
         <>
           <div className={styled.inputWrapper}>
-            <form action="" className={styled.form} onSubmit={(e)=>e.preventDefault()}>
+            <form
+              action=""
+              className={styled.form}
+              onSubmit={(e) => e.preventDefault()}
+            >
               <>
                 <div>
                   <label htmlFor="">نام کاربری</label>

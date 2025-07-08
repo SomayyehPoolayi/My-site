@@ -1,7 +1,7 @@
 
 import styled from "./inputArticle.module.css";
 
-function Input(props) {
+function InputArticle(props) {
     
     return (
     <div className={styled.inputWrapper}>
@@ -14,4 +14,4 @@ function Input(props) {
     </div>
   );
 }
-export default Input;
+export default InputArticle;
