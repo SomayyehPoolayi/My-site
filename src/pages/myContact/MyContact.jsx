@@ -24,7 +24,7 @@ function MyContact() {
 
             {/* //telegram// */}
             <div className={styled.telegram}>
-              <p>@SomayehPooalyi</p>
+              <p>@SomayehPoolayi</p>
               <Telegram className={styled.telegramIcon} />
             </div>
 

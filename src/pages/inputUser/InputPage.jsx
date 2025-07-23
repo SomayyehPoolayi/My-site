@@ -12,7 +12,7 @@ function InputPage(props, isDarkMode) {
 
   const handleLogin = async () => {
     try {
-      const response = await axios.get("http://localhost:10000/users");
+      const response = await axios.get("http://localhost:5000/users");
       const users = response.data;
 
       const matchedUser = users.find(
